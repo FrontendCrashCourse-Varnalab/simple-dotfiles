@@ -5,8 +5,8 @@ Easy, no nonsense, basic config files for working with Git Bash in a Windows env
 
 # Installation #
 
-First make sure to [installed git from here](http://git-scm.com/download/).
-Then just dowload the files in this repo and unpack them to your `%HOMEPATH%` (you can open this in explorer) dir.
+First make sure you have [installed git from here](http://git-scm.com/download/). You also need to install [Notepad++](http://notepad-plus-plus.org/download/v6.4.5.html).
+Then just dowload the files in this repo and unpack them to your `%HOMEPATH%` dir (you can open this in explorer).
 
 
 Afterwards, run the following in `Git Bash`:
