@@ -42,7 +42,7 @@
     alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
 
     # better, more convenient log format. You don't have to worry
-    l   = log --pretty=format:'%C(yellow)%h%Creset %Cgreen(%ar)%Creset %C(bold blue)<%an>%Creset | %s%C(red)%d%Creset' --graph --date=relative
+    l   = log --pretty=format:'%C(yellow)%h%Creset %Cgreen(%ar)%Creset %C(bold blue)<%an>%Creset %s%C(red)%d%Creset' --graph --date=relative
     la  = !git l --all
     r   = !git l -20
     ra  = !git r --all
