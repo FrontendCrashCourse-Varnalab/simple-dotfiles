@@ -1,0 +1,60 @@
+[color]
+	branch = auto
+	status = auto
+	diff   = auto
+	ui     = auto
+
+[branch]
+	autosetupmerge = true
+
+[color "branch"]
+	current = yellow reverse
+	local   = yellow
+	remote  = green
+
+[color "status"]
+	added	= yellow
+	changed = green
+	untracked = cyan
+
+[core]
+	whitespace = fix
+	autocrlf   = input
+
+[alias]
+    # if you're wondering what some of those command options do, just type "git help COMMAND"
+    st 	= status
+    aa  = add --all
+    ci	= commit
+    co	= checkout
+    br	= branch
+    df	= diff
+    dfw	= diff --word-diff
+    dc  = diff --cached
+    dcw = diff --cached --word-diff
+
+    # for much faster amending of commits in command line.
+    amend = commit --amend
+    # "git famend" will amend the previous commit without opening an editor, using the STAGED files
+    famend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
+
+    # show all aliases defined for git :)
+    alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
+
+    # better, more convenient log format. You don't have to worry
+    l   = log --pretty=format:'%C(yellow)%h%Creset %Cgreen(%ar)%Creset %C(bold blue)<%an>%Creset | %s%C(red)%d%Creset' --graph --date=relative
+    la  = !git l --all
+    r   = !git l -20
+    ra  = !git r --all
+
+    pullff = pull --ff-only
+    po  = push origin
+    pom = push origin master
+    pod = push origin develop
+
+[gui]
+	encoding = utf-8
+
+[push]
+	default = upstream
+
