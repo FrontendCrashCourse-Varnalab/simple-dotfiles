@@ -1,36 +1,36 @@
 [color]
-	branch = auto
-	status = auto
-	diff   = auto
-	ui     = auto
+  branch = auto
+  status = auto
+  diff   = auto
+  ui     = auto
 
 [branch]
-	autosetupmerge = true
+  autosetupmerge = true
 
 [color "branch"]
-	current = yellow reverse
-	local   = yellow
-	remote  = green
+  current = yellow reverse
+  local   = yellow
+  remote  = green
 
 [color "status"]
-	added	= yellow
-	changed = green
-	untracked = cyan
+  added  = yellow
+  changed = green
+  untracked = cyan
 
 [core]
-	whitespace = fix
-	autocrlf   = input
+  whitespace = fix
+  autocrlf   = input
     editor     = ~/npp
 
 [alias]
     # if you're wondering what some of those command options do, just type "git help COMMAND"
-    st 	= status
+    st   = status
     aa  = add --all
-    ci	= commit
-    co	= checkout
-    br	= branch
-    df	= diff
-    dfw	= diff --word-diff
+    ci  = commit
+    co  = checkout
+    br  = branch
+    df  = diff
+    dfw  = diff --word-diff
     dc  = diff --cached
     dcw = diff --cached --word-diff
 
@@ -54,8 +54,8 @@
     pod = push origin develop
 
 [gui]
-	encoding = utf-8
+  encoding = utf-8
 
 [push]
-	default = upstream
+  default = upstream
 
